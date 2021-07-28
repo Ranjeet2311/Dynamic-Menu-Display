@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./img/textile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-weight: 800;
+  text-shadow: 4px 3px 10px black;
+  color: silver;
+}
+
+.single-item {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-auto-flow: dense;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.menu-items {
+  width: 80%;
+  margin: 20px 100px;
+  padding: 10px 10px;
+  box-shadow: 4px 4px 10px black;
+  border: 1px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: white;
+}
+.menu-items:hover {
+  box-shadow: 0px 0px 0px black;
+}
+.menu-items img {
+  width: 100%;
+}
+.menu-items img:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.item-info {
+  border: 2px solid silver;
+  padding: 0.6rem;
+  border-radius: 12px;
+  margin: 0.4rem 0rem;
+}
+
+.heading-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+hr {
+  margin: 10px 0px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 900;
+  color: rgb(83, 81, 81);
+  border-left: 1px solid black;
+  padding: 0rem 0.8rem;
+}
+
+.item-text {
+  font-size: 0.6rem;
+}
+
+#btnContainer {
+  border: 2px solid silver;
+  width: 100%;
+  margin: 1rem 1rem;
+  background-color: white;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin: 20px 10px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  border-radius: 12px;
+  box-shadow: 10px 10px 10px black;
+  /* color: black; */
+  background-color: white;
+  cursor: pointer;
+  text-shadow: 2px 2px 2px black;
+  color: rgb(110, 107, 107);
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid black;
+  box-shadow: 2px 2px 2px black;
+}
+
+.btn-container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* .single-item {
+  background-color: #77dbf1;
+} */
